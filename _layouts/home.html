@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<header class="masthead">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">
+        <img src="/assets/images/logo-white.png" class="img-fluid" alt="Othersame"/>
+      </h1>
+      <div class="social-icons">
+        <a href="https://open.spotify.com/artist/2tIL13fArzHd79mAAm8Ewn" target="_blank">
+          <i class="fab fa-spotify"></i>
+        </a>
+        <a href="https://youtube.com/othersame" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://othersame.bandcamp.com" target="_blank">
+          <i class="fab fa-bandcamp"></i>
+        </a>
+        <a href="https://twitter.com/othersamecwb" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about-section text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="text-white mb-4">Depiction</h2>
+        <p class="text-white-50">Escuta aí, rapaz!</p>
+      </div>
+    </div>
+    <img src="/assets/images/presave.png" class="img-fluid" alt="">
+  </div>
+</section>
+
+<div class="container main-content">
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {{ post.content }}
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+</div>

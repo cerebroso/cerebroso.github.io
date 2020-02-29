@@ -1,0 +1,48 @@
+---
+---
+
+@import "bootstrap/bootstrap";
+@import 'grayscale';
+// @import "minima";
+
+.social-icons a {
+  margin-top: 50px;
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff!important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.main-content {
+  padding-top: 3rem;
+}
+
+.post-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: 0.75em;
+    border-bottom: thin solid #f3f3f3;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .post-meta {
+    width: auto;
+    font-weight: 300;
+    margin: 0;
+    padding: .25em 0;
+    color: #7a7a7a;
+    font-size: .75rem;
+  }
+}
+
+footer {
+  color: white;
+}
