@@ -1,31 +1,32 @@
-<footer class="site-footer h-card bg-black">
+<footer class="site-footer h-card bg-black signup-section">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper container">
+    <div class="col-md-10 col-lg-8 mx-auto text-center">
+      <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+      <h2 class="text-white mb-5">Entre em contato!</h2>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+      <form action="https://getform.io/f/10c8ef37-22ef-483d-ba5f-55425edc003c" method="POST">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" name="name" placeholder="Nome" class="form-control">
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <textarea name="text" class="form-control" placeholder="Texto" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
+          </div>
+        </div>
+        <!-- <input type="tel" name="tel"> -->
+      </form>
     </div>
-
   </div>
-
 </footer>

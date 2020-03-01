@@ -5,22 +5,57 @@
 @import 'grayscale';
 // @import "minima";
 
-.social-icons a {
-  margin-top: 50px;
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff!important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
+.social-icons {
+  a {
+    margin-top: 50px;
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    background-color: white;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    margin-right: 1rem;
+  }
+  a.spotify {
+    color: #4CAF50;
+    &:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+  }
+  a.youtube {
+    color: #e51c23;
+    &:hover {
+      background-color: #e51c23;
+      color: white;
+    }
+  }
+  a.bandcamp {
+    color: #1da0c3;
+    &:hover {
+      background-color: #1da0c3;
+      color: white;
+    }
+  }
+  a.twitter {
+    color: #1da1f2;
+    &:hover {
+      background-color: #1da1f2;
+      color: white;
+    }
+  }
 }
 
-.main-content {
+.main-content, .links-section {
   padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about-section {
+  padding-bottom: 3rem;
 }
 
 .post-list {
