@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Rock progressivo, post-grunge, post-rock e música brasileira!
 google_analytics: UA-159589413-1
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://othersa.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: othersamecwb
 # github_username:  jekyll
 
