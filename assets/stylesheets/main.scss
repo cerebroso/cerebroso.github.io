@@ -48,6 +48,20 @@
         color: white;
       }
     }
+    a.itunes {
+      color: #8664ff;
+      &:hover {
+        background-color: #8664ff;
+        color: #1dc8fb;
+      }
+    }
+    a.google-play {
+      color: #ef6c00;
+      &:hover {
+        background-color: #ef6c00;
+        color: white;
+      }
+    }
   }
 }
 
