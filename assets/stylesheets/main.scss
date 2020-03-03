@@ -4,47 +4,59 @@
 @import "bootstrap/bootstrap";
 @import "grayscale";
 
-.social-icons {
-  a {
-    margin-top: 50px;
-    display: inline-block;
+@include media-breakpoint-up(xs) {
+  .social-icons {
+    a {
+      margin-top: 50px;
+      display: inline-block;
+      background-color: white;
+      color: #fff;
+      border-radius: 100%;
+      text-align: center;
+      margin-right: 1rem;
+
+      height: 3rem;
+      width: 3rem;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    a.spotify {
+      color: #4CAF50;
+      &:hover {
+        background-color: #4CAF50;
+        color: white;
+      }
+    }
+    a.youtube {
+      color: #e51c23;
+      &:hover {
+        background-color: #e51c23;
+        color: white;
+      }
+    }
+    a.bandcamp {
+      color: #1da0c3;
+      &:hover {
+        background-color: #1da0c3;
+        color: white;
+      }
+    }
+    a.twitter {
+      color: #1da1f2;
+      &:hover {
+        background-color: #1da1f2;
+        color: white;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .social-icons a {
     height: 5rem;
     width: 5rem;
-    background-color: white;
-    color: #fff;
-    border-radius: 100%;
-    text-align: center;
     font-size: 2.5rem;
     line-height: 5rem;
-    margin-right: 1rem;
-  }
-  a.spotify {
-    color: #4CAF50;
-    &:hover {
-      background-color: #4CAF50;
-      color: white;
-    }
-  }
-  a.youtube {
-    color: #e51c23;
-    &:hover {
-      background-color: #e51c23;
-      color: white;
-    }
-  }
-  a.bandcamp {
-    color: #1da0c3;
-    &:hover {
-      background-color: #1da0c3;
-      color: white;
-    }
-  }
-  a.twitter {
-    color: #1da1f2;
-    &:hover {
-      background-color: #1da1f2;
-      color: white;
-    }
   }
 }
 
