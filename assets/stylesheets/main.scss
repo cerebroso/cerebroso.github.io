@@ -4,6 +4,21 @@
 @import "bootstrap/bootstrap";
 @import "grayscale";
 
+body {
+  // font-family: 'Varela Round';
+  font-family: 'Fira Sans';
+}
+
+.wrapper {
+  background-color: grey;
+}
+
+.post-title {
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
 @include media-breakpoint-up(xs) {
   .social-icons {
     a {

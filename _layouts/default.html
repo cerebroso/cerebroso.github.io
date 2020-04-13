@@ -4,6 +4,25 @@
   {%- include head.html -%}
 
   <body>
+    {% if page.show_menu %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Othersame</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          {% for pg in site.pages %}
+            {% if pg.public %}
+              <li class="nav-item {% if page.url == pg.url %}active{% endif %}">
+                <a class="nav-link" href="{{ page.url }}">{{ pg.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+    {% endif %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
