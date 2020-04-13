@@ -108,6 +108,21 @@ show_menu: true
 
   <div class="card">
     <div class="card-body">
+      <h5 class="card-title">NPC</h5>
+      <p class="card-text">
+        My will, as I'm trashed<br/>
+        Will I stand still on my own<br/>
+        Don't leave me hanging on this burst rope<br/>
+        Set me free, I'll never be<br/>
+        Why should I trust my uneventful endeavours<br/>
+        To save you from yourself<br/>
+        Knowing I can't make you feel better
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
       <h5 class="card-title">Sentience</h5>
       <p class="card-text">
         These lapses of happiness<br/>
@@ -127,21 +142,6 @@ show_menu: true
         But freedom within your thoughts<br/>
         To understand what it is to grow<br/>
         When you have nothing but your own
-      </p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">NPC</h5>
-      <p class="card-text">
-        My will, as I'm trashed<br/>
-        Will I stand still on my own<br/>
-        Don't leave me hanging on this burst rope<br/>
-        Set me free, I'll never be<br/>
-        Why should I trust my uneventful endeavours<br/>
-        To save you from yourself<br/>
-        Knowing I can't make you feel better
       </p>
     </div>
   </div>
