@@ -173,9 +173,9 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 3rem;
+  max-width: 100%;
   padding: 2rem;
-  min-height: 100svh;
 
   img.song {
     // max-width: 960px;
