@@ -25,14 +25,17 @@ a.lyrics {
 
 @include media-breakpoint-up(xs) {
   .social-icons {
+    display: flex;
+    gap: 1rem;
+
     a {
-      margin-top: 50px;
+      // margin-top: 50px;
       display: inline-block;
       background-color: white;
       color: #fff;
       border-radius: 100%;
       text-align: center;
-      margin-right: 1rem;
+      // margin-right: 1rem;
 
       height: 3rem;
       width: 3rem;
@@ -50,6 +53,13 @@ a.lyrics {
       color: #e51c23;
       &:hover {
         background-color: #e51c23;
+        color: white;
+      }
+    }
+    a.instagram {
+      color: #ff2946;
+      &:hover {
+        background-color: #ff2946;
         color: white;
       }
     }

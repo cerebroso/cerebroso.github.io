@@ -87,14 +87,19 @@
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
+  // height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("/assets/images/band.jpg");
+  // padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("/assets/images/enough_fundo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  height: 100vh;
+
+  .container {
+    height: 100vh;
+  }
 }
 
 .masthead h1 {
@@ -108,7 +113,7 @@
 }
 
 .masthead h2 {
-  max-width: 20rem;
+  // max-width: 20rem;
   font-size: 1rem;
 }
 
@@ -121,8 +126,6 @@
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
-    padding: 0;
   }
   .masthead h1 {
     font-size: 6.5rem;
@@ -153,6 +156,10 @@
   background-color: #4f837f;
 }
 
+.social-icons a {
+  transition: background-color 0.2s ease;
+}
+
 .btn-primary:focus {
   background-color: #4f837f;
   color: white;
@@ -162,9 +169,71 @@
   background-color: #467370 !important;
 }
 
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  height: 100vh;
+  // background: black;
+
+  img.song {
+    // max-width: 960px;
+    border: 1px solid #ffbd59;
+    max-height: 400px;
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .out-now {
+    font-family: Questrial;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .title h2 {
+    font-family: Dosis;
+    position: relative;
+    font-size: 5rem;
+    z-index: 0;
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+
+    &::before {
+      content: "ENOUGH";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      color: #ff00ff;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "ENOUGH";
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      color: #00ffff;
+      z-index: -1;
+    }
+  }
+}
+
+.hero {
+}
+
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  // padding-top: 10rem;
+  // background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
 .about-section p {
