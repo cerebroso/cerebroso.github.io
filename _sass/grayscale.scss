@@ -95,10 +95,10 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 100svh;
+  min-height: 100svh;
 
   .container {
-    height: 100svh;
+    min-height: 100svh;
   }
 }
 
@@ -175,8 +175,7 @@
   flex-direction: column;
   gap: 3.5rem;
   padding: 2rem;
-  height: 100svh;
-  // background: black;
+  min-height: 100svh;
 
   img.song {
     // max-width: 960px;
